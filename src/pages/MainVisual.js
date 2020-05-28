@@ -16,7 +16,7 @@ const MainVisual = () => {
                 <form>
                     <fieldset>
                         <div className="email_box">
-                            <label for="email_input" className="hiddenInline">Email address</label>
+                            <label htmlFor="email_input" className="hiddenInline">Email address</label>
                             <input type="text" id="email_input" className="email_input" placeholder="Email address"/>
                             <button type="submit" className="submit_btn">
                                 <span className="nowrap">Try 14 days </span>

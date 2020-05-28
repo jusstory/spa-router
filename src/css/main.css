@@ -111,7 +111,7 @@
 .subpage_tit{font-size:40px}
 .subpage_tit2{font-size: 27px;}
 .subpage_txt{margin-top: 24px;margin-bottom: 24px;line-height: 1.5;}
-.subpage img{width:100%;}
+.subpage img{width:100%;max-width:800px;}
 
 @media screen and (max-width: 768px){
 
