@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { Route } from 'react-router-dom';
-import { Home, Features, Pricing } from 'pages';
+import { Route, Switch } from 'react-router-dom';
+import { Home, Features, Pricing, NotFound } from 'pages';
 import Header from 'components/Header';
 import Footer from 'components/Footer';
 
@@ -9,12 +9,14 @@ class App extends Component {
         return (
             <div>
                 <Header/>
-                <Route exact path="/" component={Home}/>
-                <Route path="/features" component={Features}/>
-                <Route path="/pricing" component={Pricing}/>
-                
+                <Switch>
+                    <Route exact path="/" component={Home}/>
+                    <Route path="/features" component={Features}/>
+                    <Route path="/pricing" component={Pricing}/>
+                    <Route component={NotFound} />
+                </Switch>
                 <Footer/>
-            </div>
+                </div>
         );
     }
 }
