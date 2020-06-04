@@ -4,9 +4,9 @@ import propTypes from 'prop-types';
 class videos extends Component{
 
     static propTypes = {
-        title: propTypes.string,
-        text: propTypes.string,
-        link: propTypes.string
+        title: propTypes.string.isRequired,
+        text: propTypes.string.isRequired,
+        link: propTypes.string.isRequired
     }
 
     render(){
