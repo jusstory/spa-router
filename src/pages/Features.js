@@ -38,17 +38,11 @@ class Features extends  Component {
                     <h2 className="subpage_tit">Features</h2>
                     <p className="subpage_txt">Use 8th Wall to build immersive WebAR experiences that work on every mobile device. No app required.</p>
                     <img src={features} alt="features sample"/>
-                    {/* <div>
-                        <Videos link={videoLink[0]} title={videoTitle[0]} text={videoText[0]} />
-                    </div>
-                    <div>
-                        <Videos link={videoLink[1]} title={videoTitle[1]} text={videoText[1]} />
-                    </div> */}
-                    <div>
-                        {videos.map(video =>{
-                            return <Videos link={video.link} title={video.title} text={video.text} />
-                        })}
-                    </div>
+                    {/* <Videos link={videoLink[0]} title={videoTitle[0]} text={videoText[0]} />
+                    <Videos link={videoLink[1]} title={videoTitle[1]} text={videoText[1]} /> */}
+                    {videos.map((video, index) =>{
+                        return <Videos link={video.link} title={video.title} text={video.text} key={index} />
+                    })}
                 </div>
             </div>
         )

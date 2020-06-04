@@ -1,19 +1,26 @@
 import React , { Component, Fragment } from 'react';
+import propTypes from 'prop-types';
 
 class videos extends Component{
+
+    static propTypes = {
+        title: propTypes.string,
+        text: propTypes.string,
+        link: propTypes.string
+    }
+
     render(){
         return(
-            <Fragment>
+            <div>
                 <Video link={this.props.link}/>
                 <VideoText title={this.props.title} text={this.props.text} />
-            </Fragment>
+            </div>
         )
     }
 }
 
 class Video extends Component{
     render(){
-        console.log(this.props);
         return(
             <video className="featuresVideo" autoPlay loop muted playsInline>
                 <source src={this.props.link} type="video/mp4"/>
@@ -25,7 +32,6 @@ class Video extends Component{
 
 class VideoText extends Component{
     render(){
-        console.log(this.props);
         return(
             <div className="featuresVideoTxt">
                 <h2>{this.props.title}</h2>
