@@ -1,6 +1,6 @@
 import React, {Fragment} from 'react';
-import MainVisual from 'pages/MainVisual';
-import InfoWrap from 'pages/InfoWrap';
+import MainVisual from 'components/main/MainVisual';
+import InfoWrap from 'components/main/InfoWrap';
 
 const Home = () => {
     return (

@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { Route, Switch } from 'react-router-dom';
 import { Home, Features, Pricing, NotFound } from 'pages';
-import Header from 'components/Header';
-import Footer from 'components/Footer';
+import Header from 'components/inc/Header';
+import Footer from 'components/inc/Footer';
 
 class App extends Component {
     render() {

@@ -28,7 +28,11 @@
 .subpage_tit{font-size:40px}
 .subpage_tit2{font-size: 27px;}
 .subpage_txt{margin-top: 24px;margin-bottom: 24px;line-height: 1.5;}
-.subpage img{width:100%;max-width:800px;}
+.subpage img{width:100%;max-width:500px;margin-bottom:30px;}
+
+/* features video */
+.featuresVideo{display:inline-block;width:400px;border-radius:10px;}
+.featuresVideoTxt{display:inline-block;width:calc(100% - 425px);padding-left:20px;}
 
 @media screen and (max-width: 768px){
 
