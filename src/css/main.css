@@ -34,7 +34,17 @@
 .featuresVideo{display:inline-block;width:400px;border-radius:10px;}
 .featuresVideoTxt{display:inline-block;width:calc(100% - 425px);padding-left:20px;}
 
-@media screen and (max-width: 768px){
+/* pricing license */
+.box_wrap{display:flex}
+.licenseBox{flex: 0 0 23.5%;max-width: 23.5%;box-sizing: border-box;margin-right:2%;padding:20px;border-radius: 10px;border: 1px solid #D5D7E4;}
+.licenseBox:last-child{margin-right:0;}
+.licenseBox h3{margin:18px 0;font-size:27px;text-align:center;}
+.licenseBox p{font-size:14px;margin:22px 0;}
+.licenseList li, .licenseList li span{font-size:18px;}
+.licenseList li span.bold{font-size:24px;font-weight:600;}
+
+
+@media screen and (max-width: 1023px){
 
     .visual .tit{margin-top: 80px;margin-bottom:44px;font-size: 40px;}
     .visual .txt{margin-bottom:20px;font-size:20px;}
@@ -50,4 +60,11 @@
     .info_wrap .tit{padding: 0px 20%;}
     .info_wrap .txt {width: 70%;margin: 0 auto;}
 
+    .box_wrap{flex-wrap: wrap;}
+    .licenseBox{flex: 0 0 49%;max-width: 49%;margin-bottom:30px;}
+    .licenseBox:nth-child(2){margin-right:0;}
+
+}
+@media screen and (max-width: 767px){
+    .licenseBox{flex: 0 0 100%;max-width: 100%;margin-right:0;margin-bottom:30px;}
 }

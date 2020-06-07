@@ -24,13 +24,16 @@ img{vertical-align: middle;}
 	font-family: 'Nunito';
 	src: url('../font/Nunito-Regular.eot');
 	src: url('../font/Nunito-Regular.eot?#iefix') format('embedded-opentype'),
-		 url('../font/Nunito-Regular.woff') format('woff'),
-		 url('../font/Nunito-Regular.woff2') format('woff2');
+			url('../font/Nunito-Regular.woff') format('woff'),
+			url('../font/Nunito-Regular.woff2') format('woff2');
 	font-weight: 400;
 	font-style: 400;
-  }
-
-
-
+}
+@font-face {
+	font-family: 'Nunito';
+	font-style: normal;
+	font-weight: 600;
+	src: local('Nunito SemiBold'), local('Nunito-SemiBold'), url(https://fonts.gstatic.com/s/nunito/v12/XRXW3I6Li01BKofA6sKUYevI.woff2) format('woff2');
+}
 
   
