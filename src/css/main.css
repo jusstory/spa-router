@@ -35,7 +35,7 @@
 .featuresVideoTxt{display:inline-block;width:calc(100% - 425px);padding-left:20px;}
 
 /* pricing license */
-.box_wrap{display:flex}
+.licenseBox_wrap{display:flex}
 .licenseBox{flex: 0 0 23.5%;max-width: 23.5%;box-sizing: border-box;margin-right:2%;padding:20px;border-radius: 10px;border: 1px solid #D5D7E4;}
 .licenseBox:last-child{margin-right:0;}
 .licenseBox h3{margin:18px 0;font-size:27px;text-align:center;}

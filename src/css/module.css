@@ -4,7 +4,7 @@
 .mb30{margin-bottom:30px;}
 
 /* header */
-#header{display: flex;justify-content: space-between;align-items: center;width:100%;height:100px;box-sizing:border-box;padding:10px;}
+#header{display: flex;justify-content: space-between;align-items: center;width:95%;height:100px;margin:0 auto;box-sizing:border-box;padding:10px;}
 #header .logo{width:144px;height:80px;}
 #header .logo a{display:block;width:100%;height:100%;font-sizE:0;background:url('../img/logo.png') 50% 50% no-repeat;background-size:contain;}
 .nav{width:100%;display:flex;align-items: center;}
@@ -23,7 +23,7 @@
 
 /* layout */
 .subpage{min-height: 750px;}
-.subpage .container{width:95%;margin:0 auto;padding-top:15px;}
+.subpage .container{width:90%;margin:0 auto;padding-top:40px;}
 
 @media screen and (max-width: 768px){
     #header{display: block;position: relative;height: auto;padding: 0 2.5%;margin:0 auto;background: #fff;background-color: #f8f9fa;}
