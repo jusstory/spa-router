@@ -1,6 +1,7 @@
 import React, { Component }from 'react';
 import License from 'components/pricing/license';
 import styled, {css} from 'styled-components';
+import listCheck from 'img/ico_pricing_checkpng.png'
 
 const license =[
     {
@@ -58,7 +59,6 @@ class Pricing extends Component {
             </div>
         )
     }
-    
 }
 
 const starteds =[
@@ -66,17 +66,17 @@ const starteds =[
         title: "Agency",
         text : "For freelance developers, creative agencies and studios building projects for other companies",
         price : "$99 /",
-        startedList : "Cloud Editor + Hosting"
-        
+        // startedList : "Cloud Editor + Hosting"
     },
     {
         title: "Business",
         text : "For companies building projects for themselves",
         price : "$250 /",
-        startedList : "Cloud Editor + Hosting",
+        // startedList : "Cloud Editor + Hosting",
         type: "type2"
     }
 ]
+
 const StartedBoxWrap = styled.div`
     display:flex;
     flex-wrap:wrap;
@@ -102,8 +102,9 @@ const StartTitle = styled.h3`
     margin:18px 0 12px;
 `;
 const StartP = styled.p`
-    font-size:16px;
+    min-height:46px;
     margin-bottom:40px;
+    font-size:16px;
     font-weight:600;
 `;
 const StartPSapn = styled.span`
@@ -117,12 +118,29 @@ class Started extends Component{
         return(
             <StartedBoxWrap>
                 {starteds.map((started,index)=>{
-                    return <StartedBoxs title={started.title} text={started.text} price={started.price} startedList={started.startedList} type={started.type} key={index}/>
+                    return <StartedBoxs title={started.title} text={started.text} price={started.price} 
+                    // startedList={started.startedList} 
+                    type={started.type} key={index}/>
                 })}
             </StartedBoxWrap>
         )
     }
 }
+
+const testList =[
+    "Cloud Editor + Hosting",
+    "Unlimited Seats",
+    "World Tracking (SLAM)",
+    "Image Targets"
+
+]
+const Litext = styled.li`
+    padding-left:35px;
+    margin-bottom:6px;
+    line-height:32px;
+    background:url(${listCheck}) 0 0 no-repeat;
+    background-size:30px 30px;
+`;
 class StartedBoxs extends Component{
     render(){
         return(
@@ -134,7 +152,10 @@ class StartedBoxs extends Component{
                     <StartPSapn>month for your team</StartPSapn>
                 </StartP>
                 <ul>
-                    <li>{this.props.startedList}</li>
+                    {testList.map((testList,index)=>{
+                        return <Litext key={index}>{testList}</Litext>
+                    })}
+                    
                 </ul>
             </StartedBox>
         )
