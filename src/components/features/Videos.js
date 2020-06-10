@@ -23,28 +23,6 @@ class videos extends Component{
         )
     }
 }
-class videosL extends Component{
-
-    render(){
-        return(
-            <div>
-                <Video link={this.props.link}/>
-                <VideoText title={this.props.title} text={this.props.text} />
-            </div>
-        )
-    }
-}
-class videosR extends Component{
-
-    render(){
-        return(
-            <div>
-                <VideoText title={this.props.title} text={this.props.text} />
-                <Video link={this.props.link}/>
-            </div>
-        )
-    }
-}
 
 class Video extends Component{
     render(){
