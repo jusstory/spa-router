@@ -4,6 +4,7 @@ import { Home, Features, Pricing, NotFound } from 'pages';
 import Header from 'components/inc/Header';
 import Footer from 'components/inc/Footer';
 
+
 class App extends Component {
     render() {
         return (

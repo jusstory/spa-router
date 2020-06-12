@@ -12,11 +12,11 @@ class videos extends Component{
     render(){
         return(
             <div>
-                {this.props.direction == 'left' &&
+                { this.props.direction === 'left' &&
                     <Video link={this.props.link}/>
                 }
                 <VideoText title={this.props.title} text={this.props.text} />
-                {this.props.direction == 'right' &&
+                { this.props.direction === 'right' &&
                     <Video link={this.props.link}/>
                 }
             </div>
